@@ -1,0 +1,53 @@
+:root {
+  color-scheme: dark;
+
+  /* 🔹 Simple design tokens (CSS variables) */
+  --bg: #0b1020; /* Page background base color */
+  --card: rgba(255, 255, 255, 0.06); /* Main card background */
+  --card-2: rgba(255, 255, 255, 0.08); /* Slightly stronger chip background */
+  --border: rgba(255, 255, 255, 0.12); /* Soft border color */
+  --text: #e9eefc; /* Main text color */
+  --muted: rgba(233, 238, 252, 0.7); /* Secondary text color */
+  --accent: #7aa2ff; /* Accent color */
+  --good: #39d98a; /* Success color */
+  --bad: #ff5c7a; /* Error color */
+
+  --radius: 18px; /* Global corner radius */
+  --shadow: 0 18px 40px rgba(0, 0, 0, 0.45); /* Global shadow */
+}
+
+* {
+  box-sizing: border-box; /* ✅ Better sizing rules for all elements */
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    Segoe UI,
+    Roboto,
+    Arial,
+    sans-serif;
+  background:
+    radial-gradient(
+      1200px 800px at 20% 10%,
+      rgba(122, 162, 255, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      1000px 700px at 90% 20%,
+      rgba(57, 217, 138, 0.12),
+      transparent 60%
+    ),
+    var(--bg);
+}
+
+.app {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
