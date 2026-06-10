@@ -46,3 +46,7 @@ State management patterns using Redux Toolkit
 Structuring a scalable React project
 Working with modern frontend build tools (Vite)
 
+## 📸 Screenshot
+
+![Age Calculator Screenshot](./assets/Screenshot.png)
+
